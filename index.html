@@ -43,7 +43,7 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body ng-app="Body">
     <!-- Spinner Start -->
     <!-- <div -->
       <!-- id="spinner" -->
@@ -572,7 +572,98 @@
       </div>
     </div> -->
     <!-- Appointment End -->
-    <div class="container-xxl py-5">
+    <div ng-controller="MainCtrl">
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center mx-auto" style="max-width: 500px">
+            <div class="btn-group mb-3 wow fadeInUp" data-wow-delay="0.5s">
+              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked >
+              <label class="btn btn-secondary p-2" for="option1" ng-click="Change()"><div class="fs-5 px-4">Particulier</div></label>        
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" >
+              <label class="btn btn-secondary p-2" for="option2" ng-click="Change()"><div class="fs-5 px-4">Onderneming</div></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl py-5" ng-If="currentchoice === 'particulier'">
+        <!-- <div class="container"> -->
+          <!-- <div class="text-center mx-auto" style="max-width: 500px">
+            <h1 class="display-6 mb-5">Verzekeringen</h1>
+          </div> -->
+        <!-- </div> -->
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100 text-center">
+                  <i class="fa-solid fa-person-half-dress fa-3x mb-2"></i>
+                <h4 class="mb-4">
+                    Sparen Particulieren
+              </h4>
+                <p class="mb-4">
+                  U bent particulier en bent op zoek naar meer info over onze verzekeringen? Wij luisteren naar uw wensen en verwachtingen, en zorgen voor advies op maat. Bekijk ons aanbod.
+                </p>
+                <a href="#" class="fa-item-green">
+                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100 text-center">
+                  <i class="fa-solid fa-briefcase fa-3x mb-2"></i>
+                <h4 class="mb-4">
+                    Beleggen Particulieren
+                </h4>
+                <p class="mb-4">
+                  Tekstje over beleggen particulieren
+                </p>
+                <a href="#" class="fa-item-green">
+                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="container-xxl py-5" ng-If="currentchoice === 'onderneming'">
+        <!-- <div class="container">
+          <div class="text-center mx-auto" style="max-width: 500px">
+            <h1 class="display-6 mb-5">Verzekeringen</h1>
+          </div>
+        </div> -->
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100 text-center">
+                  <i class="fa-solid fa-person-half-dress fa-3x mb-2"></i>
+                <h4 class="mb-4">
+                    Sparen ondernemer
+              </h4>
+                <p class="mb-4">
+                Tekstje over sparen ondernemer
+              </p>
+                <a href="#" class="fa-item-green">
+                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100 text-center">
+                  <i class="fa-solid fa-briefcase fa-3x mb-2"></i>
+                <h4 class="mb-4">
+                    Beleggen ondernemers
+                </h4>
+                <p class="mb-4">
+                  Tekstje over beleggen ondernemers
+                </p>
+                <a href="#" class="fa-item-green">
+                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="container-xxl py-5">
       <div class="container">
         <div class="text-center mx-auto" style="max-width: 500px">
           <h1 class="display-6 mb-5">Verzekeringen</h1>
@@ -609,11 +700,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-xxl py-5">
+    </div> -->
+    <!-- <div class="container-xxl py-5">
       <div class="container">
         <div class="text-center mx-auto" style="max-width: 500px">
-          <!-- <h1 class="display-6 mb-5">Verzekeringen</h1> -->
+
         </div>
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -622,7 +713,7 @@
               <h1 class="mb-4 mt-2">
                   Sparen en Beleggen
             </h1>
-            <!-- <i class="fa-solid fa-piggy-bank fa-3x mb-4"></i> -->
+
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
@@ -637,7 +728,7 @@
               <h1 class="mb-4 mt-2">
                   Kredieten
               </h1>
-              <!-- <i class="fa-solid fa-comments-dollar fa-3x mb-4"></i> -->
+
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
@@ -649,7 +740,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Team Start -->
     <div class="container-xxl py-5">
       <div class="container">
@@ -840,6 +931,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
