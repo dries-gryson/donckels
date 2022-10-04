@@ -77,10 +77,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-          <a href="#" class="nav-item nav-link active">Home</a>
-          <a href="#" class="nav-item nav-link">Verzekeringen</a>
-          <a href="#" class="nav-item nav-link">Sparen &amp; Beleggen</a>
-          <a href="#" class="nav-item nav-link">Kredieten</a>
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="#WatDoenWij" class="nav-item nav-link">Verzekeringen</a>
+          <a href="SparenBeleggenKredieten.html#SparenEnBeleggen" class="nav-item nav-link">Sparen &amp; Beleggen</a>
+          <a href="SparenBeleggenKredieten.html#Kredieten" class="nav-item nav-link">Kredieten</a>
           <a href="#" class="nav-item nav-link">Contact</a>
         </div>
       </div>
@@ -469,7 +469,36 @@
       </div>
     </div>
     <!-- Service End -->
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+        <h1 class="display-6 mb-5">Over ons</h1>
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100 text-center">
+              <img
+              class="img-fluid me-3"
+              src="img/about.jpg"
+              alt=""
+              style="width: 75%;"
+            />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp align-items-center" data-wow-delay="1s">
+            <div class="h-100 text-center ">
 
+
+                Na mijn ingenieur studies belande ik via mijn interesse in de financiële wereld in de boeiende wereld van verzekeringen. Na het behalen van de nodige diploma's en attesten, kon ik een bestaande verzekeringsportefeuille overnemen van mijn vader. Ondertussen hebben we een 10-tal jaar ervaring kunnen opbouwen! Na een lange verbouwing kon ik met enige trots eindelijk(!) mijn eigen kantoor openen in Wevelgem!
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End --> 
     <!-- Appointment Start -->
     <!--
     <div
@@ -573,10 +602,10 @@
     </div> -->
     <!-- Appointment End -->
     <div ng-controller="MainCtrl">
-      <div class="container-xxl py-5">
+      <div class="container-xxl py-5" id="WatDoenWij">
         <div class="container">
           <div class="text-center mx-auto" style="max-width: 500px">
-            <div class="btn-group mb-3 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="btn-group mb-3">
               <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked >
               <label class="btn btn-secondary p-2" for="option1" ng-click="Change()"><div class="fs-5 px-4">Particulier</div></label>        
               <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" >
@@ -592,35 +621,75 @@
           </div> -->
         <!-- </div> -->
           <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-lg-4">
               <div class="h-100 text-center">
-                  <i class="fa-solid fa-person-half-dress fa-3x mb-2"></i>
+                  <i class="fa-solid fa-car-side fa-3x mb-2"></i>
                 <h4 class="mb-4">
-                    Sparen Particulieren
+                    Mobiliteit
               </h4>
                 <p class="mb-4">
-                  U bent particulier en bent op zoek naar meer info over onze verzekeringen? Wij luisteren naar uw wensen en verwachtingen, en zorgen voor advies op maat. Bekijk ons aanbod.
+                  Ga in alle veiligheid de weg op. Niet enkel met uw auto, natuurlijk ook met uw fiets, motorfiets of mobilhome. Verzeker uw aansprakelijkheid en bescherm uw voertuig tegen schade of diefstal, …
                 </p>
-                <a href="#" class="fa-item-green">
-                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
-                </a>
               </div>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-lg-4">
               <div class="h-100 text-center">
-                  <i class="fa-solid fa-briefcase fa-3x mb-2"></i>
+                  <i class="fa-solid fa-house fa-3x mb-2"></i>
                 <h4 class="mb-4">
-                    Beleggen Particulieren
+                    Woning
                 </h4>
                 <p class="mb-4">
-                  Tekstje over beleggen particulieren
+                  Geef uw woning de beste bescherming. Uw woning is ongetwijfeld uw grootste investering, laat ze correct verzekeren. Dit gaat over veel meer dan enkel de woning zelf, ook de inboedel, al dan niet met de waarborg diefstal, indirect verlies, …
                 </p>
-                <a href="#" class="fa-item-green">
-                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
-                </a>
                 </div>
               </div>
+              <div class="col-lg-4">
+                <div class="h-100 text-center">
+                    <i class="fa-solid fa-people-group fa-3x mb-2"></i>
+                  <h4 class="mb-4">
+                      Gezin
+                  </h4>
+                  <p class="mb-4">
+                    Uw gezin beschermen tegen problemen. Verzeker de aansprakelijkheid (familiale), bescherm uw gezin tegen ongevallen of krijg bijstand tijdens jullie reizen, …
+                  </p>
+                  </div>
+                </div>
             </div>
+            <div class="row g-5 mt-2">
+              <div class="col-lg-4">
+                <div class="h-100 text-center">
+                    <i class="fa-solid fa-briefcase-medical fa-3x mb-2"></i>
+                  <h4 class="mb-4">
+                      Gezondheid
+                </h4>
+                  <p class="mb-4">
+                    Ontdek de volledige bescherming voor uw gezondheid. Naast de medische zorgen, zorgt een hospitalisatie vaak voor zeer hoge kosten. Daarom is het belangrijk om een hospitalisatieverzekering te onderschrijven. Hebt u al een hospitalisatieverzekering via uw werk, wat na uw professionele carrière! Klikt uw instapleeftijd vast en vermijdt grote premiesprongen wanneer u de beroepsgebonden verzekering individueel voortzet.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="h-100 text-center">
+                    <i class="fa-solid fa-money-bill-trend-up fa-3x mb-2"></i>
+                  <h4 class="mb-4">
+                      Sparen &amp; beleggen
+                  </h4>
+                  <p class="mb-4">
+                    Spaar en beleg op uw maat. Ontdek de mogelijkheden om uw spaargeld te beheren en te laten renderen. Spaar op een veilige manier, met een gewaarborgd rendement (TAK 21). Of liever zonder gewaarborgd rendement, met een potentieel hoger rendement (TAK 23). Combineer het sparen met een fiscaal voordeel, of spaar voor uw kinderen of kleinkinderen.
+                  </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="h-100 text-center">
+                      <i class="fa-solid fa-piggy-bank fa-3x mb-2"></i>
+                    <h4 class="mb-4">
+                        Pensioen
+                    </h4>
+                    <p class="mb-4">
+                      Bereid uw pensioen optimaal voor en geniet er met volle teugen van. Kom meer te weten over pensioensparen of het langetermijnsparen.
+                    </p>
+                    </div>
+                  </div>
+              </div>
           </div>
       <div class="container-xxl py-5" ng-If="currentchoice === 'onderneming'">
         <!-- <div class="container">
@@ -629,35 +698,79 @@
           </div>
         </div> -->
           <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-lg-4">
               <div class="h-100 text-center">
-                  <i class="fa-solid fa-person-half-dress fa-3x mb-2"></i>
+                  <i class="fa-solid fa-truck-fast fa-3x mb-2"></i>
                 <h4 class="mb-4">
-                    Sparen ondernemer
+                    Mobiliteit
               </h4>
                 <p class="mb-4">
-                Tekstje over sparen ondernemer
+                  Ondernemingen beschikken doorgaans over meerdere bedrijfsvoertuigen. Dat kan gaan om personenwagens, maar ook om bestel- en vrachtwagens. Laat deze veilig de weg op gaan!
               </p>
-                <a href="#" class="fa-item-green">
-                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
-                </a>
               </div>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            
+            <div class="col-lg-4">
               <div class="h-100 text-center">
-                  <i class="fa-solid fa-briefcase fa-3x mb-2"></i>
+                  <i class="fa-solid fa-industry fa-3x mb-2"></i>
                 <h4 class="mb-4">
-                    Beleggen ondernemers
+                    Gebouw &amp; inhoud
                 </h4>
                 <p class="mb-4">
-                  Tekstje over beleggen ondernemers
+                  Bescherm uw woning, kantoor, handelspand of alle andere bedrijfsgebouwen. Ook uw materieel, koopwaar of machines, denk bijvoorbeeld aan een fietshandelaar. Alles op maat van uw beroep.
                 </p>
-                <a href="#" class="fa-item-green">
-                  <i class="fa-solid fa-circle-arrow-right fa-3x"></i>
-                </a>
                 </div>
               </div>
+
+              <div class="col-lg-4">
+                <div class="h-100 text-center">
+                    <i class="fa-solid fa-people-roof fa-3x mb-2"></i>
+                  <h4 class="mb-4">
+                      Ondernemer
+                  </h4>
+                  <p class="mb-4">
+                    Voorkomen dat fouten, onoplettendheden en gebreken een zware financiële impact hebben op uw bedrijf en/of privévermogen. De aansprakelijkheid van uw bedrijf op maat beschermen. U garandeert de stabiliteit en continuïteit van uw onderneming bij schade aan derden.
+                  </p>
+                  </div>
+                </div>
             </div>
+            <div class="row g-5 mt-2">
+              <div class="col-lg-4">
+                <div class="h-100 text-center">
+                    <i class="fa-solid fa-briefcase-medical fa-3x mb-2"></i>
+                  <h4 class="mb-4">
+                      Gezondheid
+                </h4>
+                  <p class="mb-4">
+                    Als u personeel tewerkstelt, dan bent u wettelijk verplicht om hiervoor een arbeidsongevallenverzekering te onderschrijven. Werkgevers kunnen hun personeelsleden ook een aantrekkelijk extralegaal voordeel gunnen onder de vorm van een hospitalisatieverzekering.
+                </p>
+                </div>
+              </div>
+              
+              <div class="col-lg-4">
+                <div class="h-100 text-center">
+                    <i class="fa-solid fa-money-bill-trend-up fa-3x mb-2"></i>
+                  <h4 class="mb-4">
+                      Sparen &amp; beleggen
+                  </h4>
+                  <p class="mb-4">
+                    Beleg via uw vennootschap (TAK 26)), waarborg uw inkomen als ondernemer of bouw uw pensioen op als ondernemer (VAPZ, IPT, …). Onderschrijf een groepsverzekering voor  uw werknemers.
+                  </p>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4">
+                  <div class="h-100 text-center">
+                      <i class="fa-solid fa-piggy-bank fa-3x mb-2"></i>
+                    <h4 class="mb-4">
+                        Pensioen
+                    </h4>
+                    <p class="mb-4">
+                      Tekstje over pensioen
+                    </p>
+                    </div>
+                  </div>
+              </div>
           </div>
         </div>
       </div>
@@ -741,36 +854,7 @@
         </div>
       </div>
     </div> -->
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center mx-auto" style="max-width: 500px">
-        <h1 class="display-6 mb-5">Over ons</h1>
-        </div>
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100 text-center">
-              <img
-              class="img-fluid me-3"
-              src="img/about.jpg"
-              alt=""
-              style="width: 75%;"
-            />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp align-items-center" data-wow-delay="1s">
-            <div class="h-100 text-center ">
 
-
-                Na mijn ingenieur studies belande ik via mijn interesse in de financiële wereld in de boeiende wereld van verzekeringen. Na het behalen van de nodige diploma's en attesten, kon ik een bestaande verzekeringsportefeuille overnemen van mijn vader. Ondertussen hebben we een 10-tal jaar ervaring kunnen opbouwen! Na een lange verbouwing kon ik met enige trots eindelijk(!) mijn eigen kantoor openen in Wevelgem!
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team End --> 
 
     <!-- Testimonial Start --> 
     <div class="container-xxl py-5">
@@ -879,10 +963,10 @@
               <a class="btn btn-square me-1" href=""
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a class="btn btn-square me-0" href=""
+              <a class="btn btn-square me-1" href=""
                 ><i class="fab fa-linkedin-in"></i
               ></a>
-              <a class="btn btn-square me-1" href=""
+              <a class="btn btn-square me-0" href=""
               ><i class="fa-brands fa-whatsapp"></i>
             </a>
             </div>
@@ -909,8 +993,8 @@
       <div class="container-fluid copyright">
         <div class="container">
           <div class="row">
-            <div class="col text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="#">Donckels Verzekeringen</a> | <a href="Gedragsregels.html#FSMA">FSMA 011961</a> | BE 0411906441| <a href="Gedragsregels.html#AssurMiFID">Gedragsregels - Asurmifid</a> | <a href="Gedragsregels.html#Ombudsman">Ombudsman</a>
+            <div class="col text-center text-md-start mb-3 mb-md-0" style="color: #a7c959;">
+              &copy; <a href="#">Donckels Verzekeringen</a> | KBO 0835.648.862 | <a href="Gedragsregels.html#AssurMiFID">AssurMiFID </a> | <a href="Gedragsregels.html#FSMA">FSMA 011961</a> | <a href="Gedragsregels.html#Ombudsman">Ombudsman</a>
             </div>
           </div>
         </div>
